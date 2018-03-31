@@ -5,7 +5,7 @@
 #### BASIC USAGE
 
 ```java
-final RXTube tube = new RXTube("YOUR_API_KEY");
+final RXTube tube = new RXTube("YOUR_YOUTUBE_API_KEY");
 ```
 
 ```java
