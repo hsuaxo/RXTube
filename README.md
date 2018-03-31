@@ -3,7 +3,7 @@ RXTube
 
 YouTube Data API wrapper based on RxJava and Retrofit.
 
-Basic Usage
+<b>Basic Usage</b>
 
 ```java
 final RXTube tube = new RXTube("YOUR_API_KEY");
