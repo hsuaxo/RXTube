@@ -6,6 +6,6 @@ import retrofit2.http.Query;
 
 interface YTService {
 
-    @GET("search?part=snippet&maxResults=50")
-    Single<YTResponse> search(@Query("type") String type, @Query("q") String searchText);
+    @GET("search?part=snippet")
+    Single<YTResponse> search(@Query("type") String type, @Query("q") String searchText, @Query("maxResults") int maxRecords);
 }
