@@ -2,7 +2,7 @@
 
 #### YouTube REST API wrapper based on RxJava and Retrofit
 
-#### BASIC USAGE
+#### USAGE
 
 ```java
 final RXTube tube = new RXTube("YOUR_YOUTUBE_API_KEY");
@@ -27,6 +27,14 @@ tube.search(YTContentType.ANY, "cats in boxes").subscribe(new YTObserver() {
         System.out.println("ERROR: " + e.getMessage());
     }
 });
+
+// SEARCH ANY CONTENT, VIDEOS, CHANNELS OR PLAYLISTS
+
+YTContentType.ANY
+YTContentType.VIDEO
+YTContentType.CHANNEL
+YTContentType.PLAYLIST
+
 ```
 
 #### LICENSE
