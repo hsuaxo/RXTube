@@ -34,7 +34,7 @@ public class YTContent extends Jsonable {
     }
 
     public String name() {
-        return name(false).toUpperCase();
+        return name(false);
     }
 
     public String name(boolean clean) {
@@ -57,7 +57,7 @@ public class YTContent extends Jsonable {
         }
     }
 
-    public String browserUrl() {
+    public String url() {
         final String url = "https://www.youtube.com/";
         switch (type()) {
             case VIDEO:
