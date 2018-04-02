@@ -27,15 +27,19 @@ tube.search(YTContentType.ANY, "cats in boxes", 50).subscribe(new YTObserver() {
         System.out.println("ERROR: " + e.getMessage());
     }
 });
+```
 
-// SEARCH FOR VIDEOS, CHANNELS OR PLAYLISTS
+#### SEARCH FOR VIDEOS, CHANNELS OR PLAYLISTS
 
+```java
 YTContentType.VIDEO
 YTContentType.CHANNEL
 YTContentType.PLAYLIST
+```
 
-// SHORTCUT SEARCH METHODS
+#### SHORTCUT SEARCH METHODS
 
+```java
 Single<YTResult> searchVideos(String searchText, int maxRecords)
 Single<YTResult> searchVideos(String searchText)
 
@@ -44,7 +48,6 @@ Single<YTResult> searchChannels(String searchText)
 
 Single<YTResult> searchPlaylists(String searchText, int maxRecords)
 Single<YTResult> searchPlaylists(String searchText)
-
 ```
 
 #### LICENSE
