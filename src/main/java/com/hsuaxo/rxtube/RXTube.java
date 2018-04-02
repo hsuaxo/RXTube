@@ -43,35 +43,35 @@ public class RXTube {
         return httpClient.build();
     }
 
-    public Single<YTResponse> search(YTContentType type, String searchText, int maxRecords) {
+    public Single<YTResult> search(YTContentType type, String searchText, int maxRecords) {
         return service.search(type.toString(), searchText, maxRecords);
     }
 
-    public Single<YTResponse> search(YTContentType type, String searchText) {
+    public Single<YTResult> search(YTContentType type, String searchText) {
         return search(type, searchText, YT_DEFAULT_MAX_RECORDS);
     }
 
-    public Single<YTResponse> searchVideos(String searchText, int maxRecords) {
+    public Single<YTResult> searchVideos(String searchText, int maxRecords) {
         return search(YTContentType.VIDEO, searchText, maxRecords);
     }
 
-    public Single<YTResponse> searchVideos(String searchText) {
+    public Single<YTResult> searchVideos(String searchText) {
         return searchVideos(searchText, YT_DEFAULT_MAX_RECORDS);
     }
 
-    public Single<YTResponse> searchChannels(String searchText, int maxRecords) {
+    public Single<YTResult> searchChannels(String searchText, int maxRecords) {
         return search(YTContentType.CHANNEL, searchText, maxRecords);
     }
 
-    public Single<YTResponse> searchChannels(String searchText) {
+    public Single<YTResult> searchChannels(String searchText) {
         return searchChannels(searchText, YT_DEFAULT_MAX_RECORDS);
     }
 
-    public Single<YTResponse> searchPlaylists(String searchText, int maxRecords) {
+    public Single<YTResult> searchPlaylists(String searchText, int maxRecords) {
         return search(YTContentType.PLAYLIST, searchText, maxRecords);
     }
 
-    public Single<YTResponse> searchPlaylists(String searchText) {
+    public Single<YTResult> searchPlaylists(String searchText) {
         return searchPlaylists(searchText, YT_DEFAULT_MAX_RECORDS);
     }
 }
