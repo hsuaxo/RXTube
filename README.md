@@ -16,8 +16,8 @@ tube.search(YTContentType.ANY, "cats in boxes", 50).subscribe(new YTObserver() {
     }
 
     @Override
-    public void onSuccess(YTResult result) {
-        result.items.forEach((item) -> {
+    public void onSuccess(YTResult r) {
+        r.items.forEach((item) -> {
             System.out.println(item.type() + " / " + item.name() + " / " + item.url());
         });
     }
