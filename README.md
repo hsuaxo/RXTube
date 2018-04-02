@@ -9,7 +9,7 @@ final RXTube tube = new RXTube("YOUR_YOUTUBE_API_KEY");
 ```
 
 ```java
-tube.search(YTContentType.ANY, "cats in boxes").subscribe(new YTObserver() {
+tube.search(YTContentType.ANY, "cats in boxes", 50).subscribe(new YTObserver() {
     @Override
     public void onSubscribe(Disposable d) {
         System.out.println("SUBSCRIBED");
