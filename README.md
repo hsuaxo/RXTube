@@ -16,8 +16,8 @@ tube.search(YTContentType.ANY, "cats in boxes", 50).subscribe(new YTObserver() {
     }
 
     @Override
-    public void onSuccess(YTResponse response) {
-        response.items.forEach((item) -> {
+    public void onSuccess(YTResult result) {
+        result.items.forEach((item) -> {
             System.out.println(item.type() + " / " + item.name() + " / " + item.url());
         });
     }
@@ -28,14 +28,13 @@ tube.search(YTContentType.ANY, "cats in boxes", 50).subscribe(new YTObserver() {
     }
 });
 
-// SEARCH ANY CONTENT, VIDEOS, CHANNELS OR PLAYLISTS
+// SEARCH FOR VIDEOS, CHANNELS OR PLAYLISTS
 
-YTContentType.ANY
 YTContentType.VIDEO
 YTContentType.CHANNEL
 YTContentType.PLAYLIST
 
-// SHORTCUT METHODS
+// SHORTCUT SEARCH METHODS
 
 Single<YTResult> searchVideos(String searchText, int maxRecords)
 Single<YTResult> searchVideos(String searchText)
