@@ -35,6 +35,17 @@ YTContentType.VIDEO
 YTContentType.CHANNEL
 YTContentType.PLAYLIST
 
+// SHORTCUT METHODS
+
+Single<YTResult> searchVideos(String searchText, int maxRecords)
+Single<YTResult> searchVideos(String searchText)
+
+Single<YTResult> searchChannels(String searchText, int maxRecords)
+Single<YTResult> searchChannels(String searchText)
+
+Single<YTResult> searchPlaylists(String searchText, int maxRecords)
+Single<YTResult> searchPlaylists(String searchText)
+
 ```
 
 #### LICENSE
