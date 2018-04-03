@@ -4,7 +4,9 @@
 
 #### INSTALLATION
 
+```gradle
 implementation 'com.hsuaxo:RXTube:1.0.0'
+```
 
 #### USAGE
 
