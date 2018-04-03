@@ -4,10 +4,21 @@
 
 #### INSTALLATION
 
-```gradle
-implementation 'com.hsuaxo:RXTube:1.0.0'
-```
+##### Gradle
 
+```gradle
+compile 'com.hsuaxo:RXTube:1.0.0'
+```
+##### Maven
+
+```maven
+<dependency>
+    <groupId>com.hsuaxo</groupId>
+    <artifactId>RXTube</artifactId>
+    <version>1.0.0</version>
+    <type>jar</type>
+</dependency>
+```
 #### USAGE
 
 ```java
