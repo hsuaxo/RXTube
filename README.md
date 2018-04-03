@@ -2,6 +2,10 @@
 
 #### YouTube REST API wrapper based on RxJava and Retrofit
 
+#### INSTALLATION
+
+implementation 'com.hsuaxo:RXTube:1.0.0'
+
 #### USAGE
 
 ```java
