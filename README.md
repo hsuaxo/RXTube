@@ -7,7 +7,7 @@
 ##### Gradle
 
 ```gradle
-compile 'com.hsuaxo:RXTube:1.0.0'
+compile 'com.hsuaxo:rxtube:1.0.1'
 ```
 ##### Maven
 
