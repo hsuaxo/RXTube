@@ -14,8 +14,8 @@ compile 'com.hsuaxo:rxtube:1.0.1'
 ```maven
 <dependency>
     <groupId>com.hsuaxo</groupId>
-    <artifactId>RXTube</artifactId>
-    <version>1.0.0</version>
+    <artifactId>rxtube</artifactId>
+    <version>1.0.1</version>
     <type>jar</type>
 </dependency>
 ```
