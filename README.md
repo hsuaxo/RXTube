@@ -1,4 +1,4 @@
-## RXTube
+## RxTube
 
 #### YouTube REST API wrapper based on RxJava and Retrofit
 
