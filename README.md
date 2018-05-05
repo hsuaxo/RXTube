@@ -7,7 +7,7 @@
 ##### Gradle
 
 ```gradle
-compile 'com.hsuaxo:rxtube:1.0.1'
+compile 'com.hsuaxo:rxtube:1.0.3'
 ```
 ##### Maven
 
@@ -15,14 +15,14 @@ compile 'com.hsuaxo:rxtube:1.0.1'
 <dependency>
     <groupId>com.hsuaxo</groupId>
     <artifactId>rxtube</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.3</version>
     <type>jar</type>
 </dependency>
 ```
 #### USAGE
 
 ```java
-final RXTube tube = new RXTube("YOUR_YOUTUBE_API_KEY");
+final RxTube tube = new RxTube("YOUR_YOUTUBE_API_KEY");
 ```
 
 ```java
