@@ -45,6 +45,14 @@ public class YTContent extends Jsonable {
         return name;
     }
 
+    public String description() {
+        return snippet.description;
+    }
+
+    public String date() {
+        return snippet.publishedAt;
+    }
+
     public String channelName() {
         return snippet.channelTitle;
     }
@@ -93,7 +101,9 @@ public class YTContent extends Jsonable {
 
     private class Snippet {
 
+        String publishedAt;
         String title;
+        String description;
         Thumbnails thumbnails;
         String channelTitle;
     }
@@ -101,11 +111,15 @@ public class YTContent extends Jsonable {
     private class Thumbnails {
 
         @SerializedName("default")
+        Thumbnail _default;
         Thumbnail medium;
+        Thumbnail high;
     }
 
     private class Thumbnail {
 
         String url;
+        int width;
+        int height;
     }
 }
